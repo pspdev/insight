@@ -49,10 +49,10 @@ static int platformId;		/* Running under NT, or 95/98? */
 
 typedef struct EXCEPTION_REGISTRATION {
     struct EXCEPTION_REGISTRATION *link;
-    EXCEPTION_DISPOSITION (*handler)(
+    EXCEPTION_DISPOSITION __attribute__ ((cdecl, used)) (*handler)(
 	    struct _EXCEPTION_RECORD*, void*, struct _CONTEXT*, void*);
-    void *ebp;
-    void *esp;
+    void __attribute__ ((used)) *ebp;
+    void __attribute__ ((used)) *esp;
     int status;
 } EXCEPTION_REGISTRATION;
 #endif

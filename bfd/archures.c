@@ -172,6 +172,7 @@ DESCRIPTION
 .#define bfd_mach_mips_loongson_2e      3001
 .#define bfd_mach_mips_loongson_2f      3002
 .#define bfd_mach_mips_sb1              12310201 {* octal 'SB', 01 *}
+.#define bfd_mach_mips_allegrex         10111431 {* octal 'AL', 31 *}
 .#define bfd_mach_mips_octeon		6501
 .#define bfd_mach_mipsisa32             32
 .#define bfd_mach_mipsisa32r2           33
